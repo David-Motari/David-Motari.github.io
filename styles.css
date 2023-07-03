@@ -15,6 +15,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  overflow-x: hidden;
 }
 
 a {
@@ -58,19 +60,19 @@ img {
 
 /* Reusable CSS */
 
-.button {
+.home_button {
   border: none;
   outline: none;
   padding: 1.4rem 4rem;
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   background-color: var(--secondary-color);
   transition: 0.3s;
   cursor: pointer;
   color: var(--primary-color);
 }
 
-.button:hover {
-  color: var(--tertiary-color);
+.home_button:hover {
+  color: #91CDE2;
   cursor: pointer;
 }
 
@@ -451,6 +453,9 @@ textarea {
 /* Footer */
 footer {
   color: black;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .footer-container {
