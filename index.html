@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.ico" type="image/x-icon">
+    <title>David Motari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-DfXdzj5+oI9FfLwy+/vJC2mAXX20KsC2G0yLgMzY++MDOsBDk8Vr+dSOxpIeBhii" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="landing-content">
+        <nav class="navbar">
+            <!--logo-->
+            <a href="#home" onclick="scrollToSection('home')"><div class="navbar-logo"></div></a>
+            <!--Navigation menu-->
+            <ul class="nav-links">
+                <!--Using checkbox hack-->
+                <input type="checkbox" id="checkbox-toggle"/>
+                <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+
+                <!--Navigation menu items-->
+                <div class="menu">
+                    <li onclick="scrollToSection('home')">HOME</li>
+                    <li onclick="scrollToSection('about')">ABOUT</li>
+                    <li onclick="scrollToSection('skills')">SKILLS</li>
+                    <li onclick="scrollToSection('portfolio')">PORTFOLIO</li>
+                    <li onclick="scrollToSection('contact')">CONTACT</li>
+
+                </div>
+
+            </ul>
+
+        </nav>
+
+        <!--Main Content-->
+        <main>
+    <!--Landing page-->
+            <section class="home" id="home">
+                    <div class="home-details">
+                        <div class="home-text">
+                                <h1 class="homeSubtitle">DAVID OBEGI MOTARI.</h1>
+                                <h3 class="homeTitle"> <em>Transforming Ideas into Digital Realities with Expert Software Engineering. </em><br>
+                                <button class="button" onclick="scrollToSection('about')"><strong>Explore</strong></button>
+                                </h3>
+                        </div>
+                        
+                    </div>
+            </section>
+    </div>
+<!--About section-->
+            <section class="about-section" id="about">
+                <div class="about-image">
+                    <img src="./images/aboutImage.png" alt="About">
+                </div>
+                <div class="about-description">
+                    <h2>WHO AM I?</h2>
+                    <p>DAVID OBEGI MOTARI is a fullstack software engineer, with a solid educational background, including a one year 70-hour/week software engineering program by ALX-Africa, Google Cloud Associate certification, and various Udacity courses, I bring expertise in component-based frontend frameworks, API development, unit testing, CI/CD pipelines, authentication, caching, database management, version control, and more. I stay abreast of emerging trends like AI, Machine Learning, blockchain, no-code development, and cloud technologies. I love problem-solving, and tackling complex challenges using systematic methodologies and thrive in collaborative environments, effectively communicating with technical and non-technical stakeholders. With long-term goals of continuous growth, I'm dedicated to contributing to the software engineering community and bringing innovative solutions to life. Beyond software engineering, I enjoy farming, playing basketball and reading books on personal development, which fuel my creativity and well-rounded perspective.</p>
+                </div>
+            </section>
+
+<!--Skills section-->
+            <section class="skills" id="skills">
+                <h2 class="section-title">SKILLS</h2>
+
+                <div class="skills-container bd-grid">
+                    <div class="skills-box">
+                        <h3 class="skills-subtitle">FRONT END</h3>
+                            <span class="skills-name">HTML5</span>
+                            <span class="skills-name">CSS3</span>
+                            <span class="skills-name">Javascript</span>
+                            <span class="skills-name">Bootstrap</span>
+                            <span class="skills-name">TypeScript</span>
+                            <span class="skills-name">React</span>
+                            <span class="skills-name">Angular</span>
+                        <h3 class="skills-subtitle">BACK END</h3>
+                            <span class="skills-name">Node Js</span>
+                            <span class="skills-name">Express Js</span>
+                            <span class="skills-name">Mongoose</span>
+                            <span class="skills-name">MongoDB</span>
+                            <span class="skills-name">PostgreSQL</span>
+                            <span class="skills-name">Flask</span>
+                            <span class="skills-name">SQLAlchemy</span>
+                            <span class="skills-name">Authentication</span>
+                        <h3 class="skills-subtitle">OTHERS COMPITENCIES</h3>
+                        <span class="skills-name">Version Control</span>
+                        <span class="skills-name">Google Cloud</span>
+                        <span class="skills-name">AWS</span>
+                        <span class="skills-name">CI/CD</span>
+                        <span class="skills-name">LINUX</span>
+                    </div>
+
+                    <div class="skills-image">
+                        <img src="./images/skills.png" alt="Skills">
+
+                    </div>
+
+                </div>
+
+            </section>
+<!--Portfolio section-->
+            <section class="portfolio" id="portfolio">
+                <div class="gallery">
+                <div class="project">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/project1.jpg" alt="Project 1" /></a>
+                    <div class="project-info">
+                    <h3>Fyyur</h3>
+                    <p>Is an artist and venue booking site</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/project2.jpg" alt="Project 2" /></a>
+                    <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/project3.jpg" alt="Project 3" /></a>
+                    <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+<!--contact section-->
+            <section class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+                <button type="submit">Submit</button>
+                </form>
+            </section>
+    </main>
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+      <h2 class="footer-title"><a href="#home">DAVID OBEGI MOTARI</a></h2>
+      <div class="footer-content">
+        <nav class="footer-links">
+          <ul>
+            <li onclick="scrollToSection('home')">HOME</li>
+            <li onclick="scrollToSection('about')">ABOUT</li>
+            <li onclick="scrollToSection('skills')">SKILLS</li>
+            <li onclick="scrollToSection('portfolio')">PORTFOLIO</li>
+            <li onclick="scrollToSection('contact')">CONTACT</li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://github.com/David-Motari" class="footer-icon" target="_blank" rel="noopener noreferrer"><img src="./images/github.png" alt="GitHub"></a></li>
+            <li><a href="https://linkedin.com/in/david-motari" class="footer-icon" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="mailto:davemotari22@gmail.com" class="footer-icon" target="_blank" rel="noopener noreferrer"><img src="./images/email.png" alt="Email"></a></li>
+            <li><a href="https://www.instagram.com/dave_motari/" class="footer-icon" target="_blank" rel="noopener noreferrer"><img src="./images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/david_motari" class="footer-icon" target="_blank" rel="noopener noreferrer"><img src="./images/twitter.png" alt="Twitter"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p class="copywrite-info">© David Motari 2023</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
