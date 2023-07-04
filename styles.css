@@ -49,12 +49,12 @@ img {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 1rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -152,10 +152,11 @@ img {
 }
 
 .menu li:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   border-radius: 5px;
   transition: 0.3s ease;
   cursor: pointer;
+  background-color: var(--tertiary-color);
 }
 
 .menu li {
@@ -202,15 +203,15 @@ input[type=checkbox] {
   outline: none;
   padding: 1.4rem 4rem;
   border-radius: 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   transition: 0.3s;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
-.home_button:hover {
-  color: #91CDE2;
-  cursor: pointer;
+.home_text button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 /* About section */
@@ -436,8 +437,8 @@ textarea {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -445,7 +446,8 @@ textarea {
 }
 
 .contact button:hover {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -555,7 +557,7 @@ footer {
 
   .menu li:hover {
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     transition: 0.3s ease;
     cursor: pointer;
   }
