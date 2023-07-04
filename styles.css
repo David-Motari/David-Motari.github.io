@@ -16,7 +16,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
-  overflow-x: hidden;
+ 
 }
 
 a {
@@ -59,62 +59,11 @@ img {
 }
 
 /* Reusable CSS */
-.section {
-  padding: 7rem 2rem;
-}
-
-.container {
-  max-width: 1030px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
 
 .flex {
   display: flex;
   align-items: center;
   column-gap: 0.6rem;
-}
-
-.section-subtitle,
-.content-subtitle {
-  color: var(--primary-color);
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.section-title,
-.content-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 1rem 0;
-}
-
-.section-description,
-.content-description {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.section-description {
-  padding: 0 16rem;
-}
-
-/* Landing page */
-.home {
-  height: 100vh;
-  width: 100%;
-}
-
-.landing-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 90vh;
-  background: #f6f6f6;
 }
 
 /* Nav styling */
@@ -176,12 +125,42 @@ input[type=checkbox] {
 }
 
 /* Home details */
+:root {
+  --primary-color: #171E45;
+  --secondary-color: #E85E04;
+  --tertiary-color: #91CDE2;
+  --accent-color: #F6C35D;
+}
+
+
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+ 
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f6f6f6;
+  overflow-x: hidden;
+}
 .home-details {
   position: absolute;
   top: 40%;
   left: 10%;
   justify-items: center;
-  display: grid;
+  display: flex;
   row-gap: 4rem;
   text-align: center;
 }
@@ -203,15 +182,15 @@ input[type=checkbox] {
   outline: none;
   padding: 1.4rem 4rem;
   border-radius: 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   transition: 0.3s;
   cursor: pointer;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
-.home_text button:hover {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+.home_button:hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 /* About section */
@@ -221,6 +200,14 @@ input[type=checkbox] {
   flex-wrap: wrap;
 }
 
+
+
+/*about*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-image {
     flex: 0 0 auto;
     position: relative;
@@ -263,28 +250,6 @@ input[type=checkbox] {
   margin: 10px;
 }
 
-.about-image::before, 
-.skills-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.1);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.about-image:hover::before, 
-.skills-image:hover::before {
-  opacity: 1;
-}
-
-.about-image:hover img, 
-.skills-image:hover img {
-  transform: scale(1.1);
-}
 
 /* Styling skills section */
 .skills {
