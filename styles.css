@@ -59,23 +59,6 @@ img {
 }
 
 /* Reusable CSS */
-
-.home_button {
-  border: none;
-  outline: none;
-  padding: 1.4rem 4rem;
-  border-radius: 1.5rem;
-  background-color: var(--secondary-color);
-  transition: 0.3s;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
-.home_button:hover {
-  color: #91CDE2;
-  cursor: pointer;
-}
-
 .section {
   padding: 7rem 2rem;
 }
@@ -200,18 +183,36 @@ input[type=checkbox] {
   display: grid;
   row-gap: 4rem;
   text-align: center;
-  color: var(--primary-color);
 }
 
 .homeSubtitle {
   font-weight: bold;
   font-size: 3em;
+  color: var(--primary-color);
 }
 
 .homeTitle {
   font-weight: lighter;
   font-size: 2.5em;
+  color: var(--primary-color);
 }
+
+.home_button {
+  border: none;
+  outline: none;
+  padding: 1.4rem 4rem;
+  border-radius: 1.5rem;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.home_button:hover {
+  color: #91CDE2;
+  cursor: pointer;
+}
+
 /* About section */
 .about-section {
   display: flex;
@@ -291,11 +292,6 @@ input[type=checkbox] {
   text-align: center;
 }
 
-.skills-subtitle {
-  color: #667;
-  margin-bottom: 1.5rem;
-}
-
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -307,7 +303,9 @@ input[type=checkbox] {
   flex: 0 0 60%;
   text-align: left;
 }
-
+.skills-title {
+  color: var(--primary-color);
+}
 .skills-image {
   flex: 0 0 40%;
   display: flex;
@@ -321,7 +319,7 @@ input[type=checkbox] {
 }
 
 .skills-subtitle {
-  color: #667;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
@@ -331,15 +329,15 @@ input[type=checkbox] {
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: .25rem .5rem;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   border-radius: .25rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skills-name:hover {
-  background-color: #667;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
   cursor: pointer;
 }
 
@@ -365,6 +363,7 @@ input[type=checkbox] {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
+  border: 1px solid rgba(23,30,69,0.1);
 }
 
 .project:hover img {
@@ -591,8 +590,8 @@ footer {
   .project-info {
     position: static;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     transition: none;
   }
 }
